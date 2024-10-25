@@ -1,13 +1,32 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="styles.css" href="./styles.css" />
-    </head>
-    <body>
-        <div></div>
-        <script src="calculator.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="calculator">
+    <label class="screen">0</label>
+    <button class="clear" onmousedown="clearScreen()">C</button>
+    <button class="back" onmousedown="backspace()">&#8592;</button>
+    <button class="division" onmousedown="div()">&#247;</button>
+    <button class="seven" onmousedown="numberPressed(7)">7</button>
+    <button class="eight" onmousedown="numberPressed(8)">8</button>
+    <button class="nine" onmousedown="numberPressed(9)">9</button>
+    <button class="multiplication" onmousedown="mul()">&#215;</button>
+    <button class="four" onmousedown="numberPressed(4)">4</button>
+    <button class="five" onmousedown="numberPressed(5)">5</button>
+    <button class="six" onmousedown="numberPressed(6)">6</button>
+    <button class="subtract" onmousedown="sub()">&#8722;</button>
+    <button class="one" onmousedown="numberPressed(1)">1</button>
+    <button class="two" onmousedown="numberPressed(2)">2</button>
+    <button class="three" onmousedown="numberPressed(3)">3</button>
+    <button class="addition" onmousedown="add()">&#43;</button>
+    <button class="zero" onmousedown="numberPressed(0)">0</button>
+    <button class="equals" onmousedown="equal()">&#61;</button>
+</div>
+<script src="calculator.js"></script>
+</body>
 </html>
